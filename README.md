@@ -38,7 +38,8 @@ git clone https://github.com/syedmahmoodali7/nextjs-app.git
 cd nextjs-app
 ```
 Install dependencies:
-```npm install```
+```bash
+npm install```
 
 Run the app locally:
 ```npm run dev```
