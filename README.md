@@ -37,9 +37,107 @@ Clone the repository:
 git clone https://github.com/syedmahmoodali7/nextjs-app.git
 cd nextjs-app
 ```
+
 Install dependencies:
+
 ```bash
 npm install
+```
 
 Run the app locally:
-```npm run dev```
+
+```bash
+npm run dev
+```
+
+The app will run at: `http://localhost:3000`
+
+---
+
+## 🐳 Docker Setup
+
+Build Docker image:
+
+```bash
+docker build -t nextjs-app .
+```
+
+Run Docker container:
+
+```bash
+docker run -p 3000:3000 nextjs-app
+```
+
+The app will run at: `http://localhost:3000`
+
+---
+
+## 🤖 GitHub Actions CI/CD
+
+The workflow automatically:
+
+1. Builds the Docker image on push to `main` branch  
+2. Logs in to **GitHub Container Registry (GHCR)**  
+3. Pushes the Docker image with proper tagging  
+
+Workflow file: `.github/workflows/main.yml`  
+
+Docker image URL:  
+`ghcr.io/syedmahmoodali7/nextjs-app:latest`
+
+---
+
+## ☸️ Kubernetes Deployment (Minikube)
+
+Start Minikube:
+
+```bash
+minikube start
+```
+
+Apply Kubernetes manifests:
+
+```bash
+kubectl apply -f k8s/deployment.yaml
+kubectl apply -f k8s/service.yaml
+```
+
+Check pods and service:
+
+```bash
+kubectl get pods
+kubectl get svc
+```
+
+Access the application:
+
+```bash
+minikube service nextjs-service
+```
+
+---
+
+## 📝 Folder Structure
+
+```
+my-next-app/
+│
+├── k8s/
+│   ├── deployment.yaml
+│   └── service.yaml
+├── .github/workflows/
+│   └── main.yml
+├── Dockerfile
+├── package.json
+├── pages/
+│   └── index.js
+└── README.md
+```
+
+---
+
+## ✅ Author
+
+**Syed Mahmood Ali**  
+
+This project demonstrates containerization, CI/CD automation, and Kubernetes deployment using a simple Next.js application.
