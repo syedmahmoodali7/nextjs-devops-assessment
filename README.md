@@ -1,64 +1,60 @@
-# 🚀 DevOps Project - Next.js App Deployment
+🚀 DevOps Project - Next.js App Deployment
+This is a Next.js application containerized with Docker, automated via GitHub Actions, and deployed on Kubernetes (Minikube).
 
-This is a **Next.js** application containerized with **Docker**, automated via **GitHub Actions**, and deployed on **Kubernetes (Minikube)**.
-
----
-
-## 📦 App Overview
-
+📦 App Overview
 This project demonstrates a complete DevOps workflow:
+✅ Built with Next.js
+🐳 Containerized using Docker
+🤖 Automated CI/CD with GitHub Actions and pushed image to GitHub Container Registry (GHCR)
+☸️ Deployed on Kubernetes (Minikube)
 
-- ✅ Built with **Next.js**
-- 🐳 Containerized using **Docker**
-- 🤖 Automated CI/CD with **GitHub Actions** and pushed image to **GitHub Container Registry (GHCR)**
-- ☸️ Deployed on **Kubernetes (Minikube)**
-
----
-
-## 🛠️ Prerequisites
-
+🛠️ Prerequisites
 Before you begin, make sure you have:
 
-- Node.js (v20+)
-- npm
-- Docker
-- Minikube
-- kubectl
-- GitHub account with a **public repository**
-- GitHub Actions enabled for the repository
+Node.js (v20+)
 
----
+npm
 
-## 💻 Local Setup
+Docker
 
-1. **Clone the repository:**
+Minikube
 
-```bash
+kubectl
+
+GitHub account with a public repository
+
+GitHub Actions enabled for the repository
+
+💻 Local Setup
+Clone the repository:
+
 git clone https://github.com/syedmahmoodali7/nextjs-app.git
 cd nextjs-app
+
+
 Install dependencies:
 
-bash
-Copy code
 npm install
+
+
 Run the app locally:
 
-bash
-Copy code
 npm run dev
+
+
 The app will run at: http://localhost:3000
 
 🐳 Docker Setup
 Build Docker image:
 
-bash
-Copy code
 docker build -t nextjs-app .
+
+
 Run Docker container:
 
-bash
-Copy code
 docker run -p 3000:3000 nextjs-app
+
+
 The app will run at: http://localhost:3000
 
 🤖 GitHub Actions CI/CD
@@ -71,36 +67,33 @@ Logs in to GitHub Container Registry (GHCR)
 Pushes the Docker image with proper tagging
 
 Workflow file: .github/workflows/main.yml
-
-Docker image URL:
-ghcr.io/syedmahmoodali7/nextjs-app:latest
+Docker image URL: ghcr.io/syedmahmoodali7/nextjs-app:latest
 
 ☸️ Kubernetes Deployment (Minikube)
 Start Minikube:
 
-bash
-Copy code
 minikube start
+
+
 Apply Kubernetes manifests:
 
-bash
-Copy code
 kubectl apply -f k8s/deployment.yaml
 kubectl apply -f k8s/service.yaml
+
+
 Check pods and service:
 
-bash
-Copy code
 kubectl get pods
 kubectl get svc
+
+
 Access the application:
 
-bash
-Copy code
 minikube service nextjs-service
+
+
 📝 Folder Structure
-lua
-Copy code
+
 my-next-app/
 │
 ├── k8s/
@@ -113,14 +106,9 @@ my-next-app/
 ├── pages/
 │   └── index.js
 └── README.md
+
+
 ✅ Author
 Syed Mahmood Ali
 
 This project demonstrates containerization, CI/CD automation, and Kubernetes deployment using a simple Next.js application.
-
-pgsql
-Copy code
-
-This is fully ready to paste as `README.md`.  
-
-If you want, I can also make a **slightly more “eye-catching” version with badges and color formatting** that looks professional on GitHub. Do you want me to do that?
