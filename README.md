@@ -1,4 +1,4 @@
-🚀 **DevOps Project - Next.js App Deployment**
+# 🚀 DevOps Project - Next.js App Deployment
 
 This is a Next.js application containerized with Docker, automated via GitHub Actions, and deployed on Kubernetes (Minikube).
 
