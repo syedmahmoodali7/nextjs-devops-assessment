@@ -80,7 +80,7 @@ The workflow automatically:
 2. Logs in to **GitHub Container Registry (GHCR)**  
 3. Pushes the Docker image with proper tagging  
 
-Workflow file: `.github/workflows/main.yml`  
+Workflow file: `.github/workflows/deploy.yaml`  
 
 Docker image URL:  
 `ghcr.io/syedmahmoodali7/nextjs-app:latest`
@@ -109,7 +109,7 @@ kubectl get pods
 kubectl get svc
 ```
 
-Access the application:
+Access the application on http://localhost:3000:
 
 ```bash
 minikube service nextjs-service
