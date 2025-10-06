@@ -29,8 +29,8 @@ GitHub Actions enabled for the repository
 💻 Local Setup
 Clone the repository:
 
-git clone https://github.com/syedmahmoodali7/nextjs-app.git
-cd nextjs-app
+'''git clone https://github.com/syedmahmoodali7/nextjs-app.git'''
+'''cd nextjs-app'''
 
 
 Install dependencies:
