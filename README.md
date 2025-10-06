@@ -34,7 +34,7 @@ Before you begin, make sure you have:
 Clone the repository:
 
 ```bash
-git clone https://github.com/syedmahmoodali7/nextjs-app.git
+git clone https://github.com/syedmahmoodali7/nextjs-devops-assessment.git
 cd nextjs-app
 ```
 
