@@ -39,7 +39,7 @@ cd nextjs-app
 ```
 Install dependencies:
 ```bash
-npm install```
+npm install
 
 Run the app locally:
 ```npm run dev```
